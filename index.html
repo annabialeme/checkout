@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Checkout</title>
 </head>
+
 <body>
     <main class="main-content">
         <article class="article">
-                <h1 class="article-title">Checkout</h1>
+            <h1 class="article-title">Checkout</h1>
             </header>
             <p class="section-text1">Homepage/Clothing Category/</p>
             <p class="section-text2">Checkout</p>
@@ -29,46 +31,46 @@
                     </div>
                 </div>
 
-                <div class = "article-header"></div>
-        
+                <div class="article-header"></div>
+
                 <div class="container">
                     <h2>Contact Information</h2>
                     <label for="firstName">First Name:</label>
                     <input type="text" id="firstName" name="firstName">
-                  
+
                     <label for="lastName">Last Name:</label>
                     <input type="text" id="lastName" name="lastName" value="Last Name e.g John, Mary">
-                  
+
                     <label for="email">Email Address:</label>
                     <input type="email" id="email" name="email" value="Your email@gmail.com">
-                  
+
                     <label for="phone">Phone Number:</label>
                     <input type="tel" id="phone" value="+1-(0000 000 0000)">
-                  
-                <div class = "container1">
-                    <h2>Delivery Information</h2>
-                    <label for="deliveryDate">Delivery Date:</label>
-                    <input type="date" id="date" name="firstName">
-                </div>
-                <div class = "Convenient Time">
-                    <label for="time">Convenient Time</label>
-                    <input type="time" id="time" name="time">    
-                </div>
-        
-                <label for="cidade" >Cidade :</label>
-                <select name = "cidade" id ="cidade" required >
-                    <option value = "alabama">Alabama</option>
-                    <option value = "auburn">Auburn</option>
-                    <option value = "huntsville" >Huntsville</option>
-                    <option value = "montgomery" >Montgomery</option>
-                    <option value = "birmingham" >Birmingham</option>
-                </select>
-              
-                <label for="adress">Adress:</label>
-                <input type="adress" id="adress" value="Click to find adress">
 
-                <label for="code">Zip Code:</label>
-                <input type="code" id="code" value="00000">
+                    <div class="container1">
+                        <h2>Delivery Information</h2>
+                        <label for="deliveryDate">Delivery Date:</label>
+                        <input type="date" id="date" name="firstName">
+                    </div>
+                    <div class="Convenient Time">
+                        <label for="time">Convenient Time</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+
+                    <label for="cidade">Cidade :</label>
+                    <select name="cidade" id="cidade" required>
+                        <option value="alabama">Alabama</option>
+                        <option value="auburn">Auburn</option>
+                        <option value="huntsville">Huntsville</option>
+                        <option value="montgomery">Montgomery</option>
+                        <option value="birmingham">Birmingham</option>
+                    </select>
+
+                    <label for="adress">Adress:</label>
+                    <input type="adress" id="adress" value="Click to find adress">
+
+                    <label for="code">Zip Code:</label>
+                    <input type="code" id="code" value="00000">
                 </div>
             </section>
             <footer class="article-footer">
@@ -76,10 +78,98 @@
             </footer>
         </article>
         <aside class="sidebar">
-            <h2 class="sidebar-title"> Informações adicionais</h2>
-            <p class="sidebar-text">Este é um conteúdo complementar</p>
-        </aside>
-    </main>
+            <h2 class="sidebar-title">
+                <h1>Your Order</h1>
+
+                <div class="article-header"></div>
+
+                <div class="order-item">
+                    <div class="item-details">
+                        <img src="img/jaqueta.jpg" alt="Vintage Sport Jacket">
+                        <h3>Vintage Sport Jacket</h3>
+                        <p>-Vintage Highschool Jock Bully</p>
+                        <p>-1960 Classic Edition</p>
+
+                        <div class="quantity-container">
+                            <label for="quantity">Quantity:</label>
+                            <div class="quantity">
+                                <button class="decrement">-</button>
+                                <input type="number" id="quantity" value="1" min="0">
+                                <button class="increment">+</button>
+                            </div>
+                        </div>
+
+                        <script src="script.js"></script>
+</body>
+<div class="options">
+    <label for="size">Size:</label>
+    <select id="size">
+        <option value="medium">Medium size</option>
+
+    </select>
+    <label for="color">Colour:</label>
+    <select id="color">
+        <option value="red">Red</option>
+    </select>
+
+</div>
+
+<div class="price">$165.00</div>
+</div>
+</div>
+</div>
+<div class="order-item">
+    <div class="item-details">
+        <img src="img/jaqueta puma.jpg" alt="Vintage Sport Jacket">
+        <h3>Pamela's Jacket</h3>
+        <p>-Vintage Winter WEARS</p>
+        <p>1975 Classic Edition</p>
+
+
+        <div class="options">
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="medium">Large size</option>
+
+            </select>
+            <label for="color">Colour:</label>
+            <select id="color">
+                <option value="red">Purple</option>
+            </select>
+            <div class="price">$140.00</div>
+        </div>
+        <div class="article-header"></div>
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td>$654.00</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>$64.00</td>
+            </tr>
+            <tr>
+                <td>Vat,tax</td>
+                <td>$64.00</td>
+            </tr>
+            <tr>
+                <td class="total">Total</td>
+                <td class="total">$778.00</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+</div>
+
+</aside>
+</main>
 
 </body>
+
 </html>
